@@ -10,12 +10,19 @@
 
 /* Global */
 
+html{
+    overflow-x: hidden;
+}
+
 body, head{
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.text34{
+    font-size: 24px;
+}
 
 /* Header */
 
@@ -78,6 +85,15 @@ body, head{
 }
 
 
+.labo-separator{
+    width: 73px;
+    height: 8px;
+    background: var(--primary-color);
+    box-shadow: 0px 13px 34px rgba(0, 0, 0, 0.21);
+    border-radius: 21px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
 /* Homepage */
 
 .homepage-container{
@@ -113,8 +129,12 @@ body, head{
     letter-spacing: 0.05em;
     color: #FFFFFF;
     background: #2F80ED;
-    box-shadow: 0 8px 34px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 13px 34px rgba(0, 0, 0, 0.21);
     border-radius: 21px;
+}
+
+.labo-button:focus, .labo-button:active{
+    outline: none;
 }
 
 .centerAlign{
@@ -127,6 +147,33 @@ body, head{
     margin: 40px;
     background: #F2F2F2;
     box-shadow: 0px 13px 34px rgba(0, 0, 0, 0.08);
+}
+
+
+.sliderItem{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    background: #F2F2F2;
+    box-shadow: 0px 13px 34px rgba(0, 0, 0, 0.08);
+}
+
+.item-heading{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1pt;
+    margin-left:40px;
+    margin-right: 40px;
+}
+
+.item-description{
+    color: var(--text-default) !important;
+    margin-left:40px;
+    margin-right: 40px;
+    font-size: 13px;
+    letter-spacing: 1pt;
+    width: 200px;
+
 }
 
 
