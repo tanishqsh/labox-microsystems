@@ -4,13 +4,16 @@ import FadeIn from "react-fade-in";
 export class About extends React.Component{
     render(){
         return(
-            <div className={'element-wrapper'}>
-                <br/><br/><br/><br/>
+            <div className={'element-wrapper mobilePadding'}>
+                <br/><br/>
+                <div className={'mobileHide'}>
+                <br/><br/>
+                </div>
                 <div className={'container'}>
                     <div className={'row'}>
                         <div className={'col-lg-6'}>
                             <FadeIn>
-                            <p className={'heading-text'}> About Us </p>
+                            <p className={'heading-text text-center'}> About Us </p>
                             <p className={'paragraph-text'}>
                             With clarity of vision to respond to the growing needs in modern microscopy,
                             LABO was founded on its unique abilities to design and manufacture high precision Microscopes and Optical instruments.

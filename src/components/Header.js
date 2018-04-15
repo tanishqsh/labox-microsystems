@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {OffCanvasMenu} from "./Elements/OffCanvasMenu";
 
 
 const Header = props => (
@@ -8,6 +9,7 @@ const Header = props => (
         <div className={'container-fluid header-container'}>
             <div className={'row hidden-lg'}>
                 <div className={'col-xs-12 col-lg-6'}>
+                    <OffCanvasMenu/>
                     <Link to={'/'}>
                         <div className={'logo-container'}>
                             LABO<span className={'sup-element'}>&reg;</span>

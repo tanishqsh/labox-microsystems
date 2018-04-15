@@ -15,7 +15,7 @@ const Main = () => (
                 render={({ match: { url } }) => (
                     <Switch>
                         <Route exact path={`${url}/`} component={ProductArchive} />
-                        <Route exact path={`${url}/compound-microscopes`} component={ProductPage} />
+                        <Route path={`${url}/`} component={ProductPage} />
                         />
                     </Switch>
                 )}
