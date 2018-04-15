@@ -10,8 +10,16 @@ const Main = () => (
         <Switch onUpdate={() => window.scrollTo(0, 0)}>
             <Route exact path='/' component={Homepage}/>
             <Route exact path='/about' component={About}/>
-            <Route exact path='/products' component={ProductArchive}/>
-            <Route exact path={'/products/compound-microscopes'} component={ProductPage} />
+            <Route
+                path="/products"
+                render={({ match: { url } }) => (
+                    <Switch>
+                        <Route exact path={`${url}/`} component={ProductArchive} />
+                        <Route exact path={`${url}/compound-microscopes`} component={ProductPage} />
+                        />
+                    </Switch>
+                )}
+            />
             <Route component={Homepage}/>
         </Switch>
     </main>
