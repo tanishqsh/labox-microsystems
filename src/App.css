@@ -20,6 +20,10 @@ body, head{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .text34{
     font-size: 24px;
 }

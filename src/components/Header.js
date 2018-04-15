@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+
 
 const Header = props => (
     <div className={'element-wrap'}>
@@ -6,16 +8,18 @@ const Header = props => (
         <div className={'container-fluid header-container'}>
             <div className={'row hidden-lg'}>
                 <div className={'col-xs-12 col-lg-6'}>
-                    <div className={'logo-container'}>
-                        LABO<span className={'sup-element'}>&reg;</span>
-                    </div>
+                    <Link to={'/'}>
+                        <div className={'logo-container'}>
+                            LABO<span className={'sup-element'}>&reg;</span>
+                        </div>
+                    </Link>
                 </div>
                 <div className={'col-lg-6 text-right mobileHide'}>
                     <div className={'menu-container'}>
-                        <a className={'menu-item'}> Home </a>
-                        <a className={'menu-item'}> Products </a>
-                        <a className={'menu-item'}> Contact </a>
-                        <a className={'menu-item'}> FAQ </a>
+                        <Link to={'/'} className={'menu-item'}> Home </Link>
+                        <Link to={'/products'} className={'menu-item'}> Products </Link>
+                        <Link to={'/contact'} className={'menu-item'}> Contact </Link>
+                        <Link to={'/faq'} className={'menu-item'}> FAQ </Link>
                     </div>
                 </div>
             </div>

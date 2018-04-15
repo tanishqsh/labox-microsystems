@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import FadeIn from 'react-fade-in';
-import 'hover.css';
+import '../../../node_modules/hover.css/css/hover.css';
 import Slider from 'react-slick';
-import {Separator} from './Separator';
+import {Separator} from '../Elements/Separator';
+import {Link} from "react-router-dom";
 
 
 
@@ -19,7 +20,6 @@ export class Homepage extends React.Component {
         };
         return(
             <div className={'element-wrapper'}>
-
                 <div className={'homepage-container'}>
                     <div className={'container'}>
                         <div className={'row'}>
@@ -30,7 +30,7 @@ export class Homepage extends React.Component {
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed   Lorem ipsum </p>
                                     <br/>
                                     <div className={'text-center'}>
-                                        <button className={'labo-button'}> Discover </button>
+                                        <Link to={'/about'}><button className={'labo-button'}> Discover </button></Link>
                                     </div>
                                 </FadeIn>
                             </div>
