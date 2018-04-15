@@ -7,10 +7,11 @@ import {ProductArchive} from "./Pages/ProductArchive";
 
 const Main = () => (
     <main>
-        <Switch>
+        <Switch onUpdate={() => window.scrollTo(0, 0)}>
             <Route exact path='/' component={Homepage}/>
             <Route exact path='/about' component={About}/>
             <Route exact path='/products' component={ProductArchive}/>
+            <Route exact path={'/products/compound-microscopes'} component={ProductPage} />
             <Route component={Homepage}/>
         </Switch>
     </main>

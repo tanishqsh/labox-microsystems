@@ -12,12 +12,12 @@ export class ProductArchive extends React.Component{
 
     render(){
 
-        const CompoundMicroscopes = ['Compound Microscopes', '/compound-microscopes', 'image.jpg'];
-        const ResearchMicroscopes = ['Research Microscopes', '/research-microscopes', 'image.jpg'];
-        const StereoMicroscopes = ['Stereo Microscopes', '/stereo-microscopes', 'image.jpg'];
-        const DigitalMicroscopes = ['Digital Microscopes', '/digital-microscopes', 'image.jpg'];
-        const SurgicalMicroscopes = ['Surgical Microscopes', '/surgical-microscopes', 'image.jpg'];
-        const IndustrialMicroscopes = ['Industrial Microscopes', '/industrial-microscopes', 'image.jpg'];
+        const CompoundMicroscopes = ['Compound Microscopes', 'compound-microscopes', 'image.jpg'];
+        const ResearchMicroscopes = ['Research Microscopes', 'research-microscopes', 'image.jpg'];
+        const StereoMicroscopes = ['Stereo Microscopes', 'stereo-microscopes', 'image.jpg'];
+        const DigitalMicroscopes = ['Digital Microscopes', 'digital-microscopes', 'image.jpg'];
+        const SurgicalMicroscopes = ['Surgical Microscopes', 'surgical-microscopes', 'image.jpg'];
+        const IndustrialMicroscopes = ['Industrial Microscopes', 'industrial-microscopes', 'image.jpg'];
 
 
         const productCat =
@@ -32,7 +32,10 @@ export class ProductArchive extends React.Component{
 
         return(
             <div className={'element-wrapper'}>
-                <br/><br/><br/><br/>
+                <br/><br/>
+                <div className={'mobileHide'}>
+                    <br/><br/>
+                </div>
                 <div className={'container'}>
                     <FadeIn>
                     <h1 className={'heading-text text-center'}> Products </h1>
@@ -42,8 +45,8 @@ export class ProductArchive extends React.Component{
                         {productCat.map((category, index) =>
                             (
 
-                                    <div className={'col-lg-4'}>
-                                        <Link to={category[1]}>
+                                    <div className={'col-sm-4 col-xs-4 hvr-grow'}>
+                                        <Link to={/products/+category[1]}>
                                         <div className={'placeholder'}>
                                         </div>
                                         <p className={'item-heading'}> {category[0]} </p>

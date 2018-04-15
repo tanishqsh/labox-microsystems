@@ -12,8 +12,10 @@ export class ProductPage extends React.Component{
         const specs = ['Excepteur sint occaecat cupidatat non proident, sunt ', 'Quadruple nosepiece (Ball bearing type)'];
         return(
             <div className={'element-wrapper'}>
-                <br/><br/><br/><br/>
-                <div className={'container'}>
+                <div className={'mobileHide'}>
+                    <br/><br/><br/><br/>
+                </div>
+                <div className={'container '}>
                     <div className={'row'}>
                         <div className={'col-lg-6'}>
                             <FadeIn>
@@ -21,7 +23,7 @@ export class ProductPage extends React.Component{
                                 </div>
                             </FadeIn>
                         </div>
-                        <div className={'col-lg-6'}>
+                        <div className={'col-lg-6 mobilePadding'}>
                             <FadeIn>
                             <br/>
                             <p className={'heading-text'}> Product Name {this.props.name} </p>

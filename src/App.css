@@ -203,6 +203,10 @@ a:hover{
         display: none;
     }
 
+    .mobilePadding{
+        padding:30px;
+    }
+
     .heading-text{
         font-size: 32px;
         line-height: 1.2;
@@ -211,6 +215,5 @@ a:hover{
     .subtitle-para{
         max-width: 400px;
     }
-    
-    
+
 }
