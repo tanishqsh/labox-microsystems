@@ -8,8 +8,10 @@ const Header = props => (
         <div className={'container-fluid primary-fill topBar'}/>
         <div className={'container-fluid header-container'}>
             <div className={'row hidden-lg'}>
-                <div className={'col-xs-12 col-lg-6'}>
+                <div className={'col-xs-2'}>
                     <OffCanvasMenu/>
+                </div>
+                <div className={'col-xs-10 col-lg-6'}>
                     <Link to={'/'}>
                         <div className={'logo-container'}>
                             LABO<span className={'sup-element'}>&reg;</span>
