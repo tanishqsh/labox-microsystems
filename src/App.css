@@ -28,6 +28,10 @@ a:hover{
     font-size: 24px;
 }
 
+.margin-left{
+    margin-left: 20px;
+}
+
 /* Header */
 
 .topBar{
@@ -35,7 +39,7 @@ a:hover{
 }
 
 .header-container{
-    padding: 20pt;
+    padding: 20pt 20pt 20pt 10pt;
 }
 
 .primary-fill{
@@ -44,7 +48,6 @@ a:hover{
 
 .logo-container{
     color: var(--primary-color);
-    margin-left: 60pt;
     letter-spacing: 1.5pt;
     font-weight: 600;
     font-size: 21px;
@@ -59,6 +62,14 @@ a:hover{
     color: var(--primary-color);
 }
 
+.onTop{
+    z-index: 999999;
+}
+
+.onBottom{
+    z-index: 0;
+}
+
 .menu-container{
     margin-right: 60pt;
     display: inline;
@@ -69,7 +80,7 @@ a:hover{
     padding: 20pt;
     font-size: 18px;
     letter-spacing: 1.2pt;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-transition: all var(--transition-time);
     -moz-transition: all var(--transition-time);
@@ -200,6 +211,7 @@ a:hover{
     .logo-container{
         text-align: center;
         margin-left: 0;
+        margin-top: -27px;
         font-size: 25px;
     }
     
@@ -223,5 +235,6 @@ a:hover{
     .mobileOnly{
         display: block;
     }
+
 
 }

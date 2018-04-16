@@ -6,12 +6,12 @@ import {OffCanvasMenu} from "./Elements/OffCanvasMenu";
 const Header = props => (
     <div className={'element-wrap'}>
         <div className={'container-fluid primary-fill topBar'}/>
-        <div className={'container-fluid header-container'}>
+        <div className={'container header-container'}>
             <div className={'row hidden-lg'}>
-                <div className={'col-xs-2'}>
+                <div className={'col-xs-2 onTop'}>
                     <OffCanvasMenu/>
                 </div>
-                <div className={'col-xs-10 col-lg-6'}>
+                <div className={'col-xs-10 col-lg-6 onBottom'}>
                     <Link to={'/'}>
                         <div className={'logo-container'}>
                             LABO<span className={'sup-element'}>&reg;</span>

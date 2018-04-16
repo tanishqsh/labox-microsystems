@@ -5,6 +5,8 @@ import Slider from 'react-slick';
 import {Separator} from '../Elements/Separator';
 import {Link} from "react-router-dom";
 
+import image_microscopeHeader from "../../images/microscopetemp.png";
+
 
 
 
@@ -36,7 +38,11 @@ export class Homepage extends React.Component {
                             </div>
                             <div className={'col-lg-6 centerAlign'}>
                                 <FadeIn>
-                                    <div className={'placeholder'}>
+                                    <div className={''}>
+                                        <div className={'mobileOnly'}>
+                                        <br/><br/><br/><br/>
+                                        </div>
+                                        <img width={'250px'} src={image_microscopeHeader}/>
                                     </div>
                                 </FadeIn>
                             </div>
