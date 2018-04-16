@@ -56,50 +56,59 @@ export class Homepage extends React.Component {
                     <div className={'row'}>
                         <div className={'col-lg-12'}>
                             <Slider {...settings}>
+                                <Link to={'/products/compound-microscopes'}>
                                 <div className={'sliderItem-container hvr-grow'}>
                                     <div className={'sliderItem'}>
                                     </div>
                                     <p className={'item-heading'}> Compound </p>
                                     <p className={'item-description'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  </p>
                                 </div>
+                                </Link>
 
+                                <Link to={'/products/digital-microscopes'}>
                                 <div className={'sliderItem-container hvr-grow'}>
                                     <div className={'sliderItem'}>
                                     </div>
                                     <p className={'item-heading'}> Digital </p>
                                     <p className={'item-description'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  </p>
-
                                 </div>
+                                </Link>
 
+                                <Link to={'/products/industrial-microscopes'}>
                                 <div className={'sliderItem-container hvr-grow'}>
                                     <div className={'sliderItem'}>
                                     </div>
                                     <p className={'item-heading'}> Industrial </p>
                                     <p className={'item-description'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  </p>
                                 </div>
+                                </Link>
 
+                                <Link to={'/products/research-microscopes'}>
                                 <div className={'sliderItem-container hvr-grow'}>
                                     <div className={'sliderItem'}>
                                     </div>
                                     <p className={'item-heading'}>Research  </p>
                                     <p className={'item-description'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  </p>
                                 </div>
+                                </Link>
 
-
+                                <Link to={'/products/stereo-microscopes'}>
                                 <div className={'sliderItem-container hvr-grow'}>
                                     <div className={'sliderItem'}>
                                     </div>
                                     <p className={'item-heading'}> Stereo </p>
                                     <p className={'item-description'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  </p>
                                 </div>
+                                </Link>
 
-
+                                <Link to={'/products/surgical-microscopes'}>
                                 <div className={'sliderItem-container hvr-grow'}>
                                     <div className={'sliderItem'}>
                                     </div>
                                     <p className={'item-heading'}> Surgical </p>
                                     <p className={'item-description'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed  </p>
                                 </div>
+                                </Link>
 
                             </Slider>
                         </div>
