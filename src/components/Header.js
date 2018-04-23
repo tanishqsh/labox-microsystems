@@ -14,7 +14,9 @@ const Header = props => (
                 <div className={'col-xs-10 col-lg-6 onBottom'}>
                     <Link to={'/'}>
                         <div className={'logo-container'}>
-                            LABO<span className={'sup-element'}>&reg;</span>
+                            LABO<span className={'sup-element'}>&reg;</span><br/>
+                            <div className={'logo-sub-title'}> Worlds Within </div>
+
                         </div>
                     </Link>
                 </div>

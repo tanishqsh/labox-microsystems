@@ -1,5 +1,7 @@
 import React from 'react';
 import FadeIn from "react-fade-in";
+import Separator from "../Elements/Separator";
+import TextLoop from "react-text-loop";
 
 export class About extends React.Component{
     render(){
@@ -28,6 +30,22 @@ export class About extends React.Component{
                             <div className={'placeholder'}>
                             </div>
                             </FadeIn>
+                        </div>
+                    </div>
+                    <Separator/>
+                    <div className={'row'}>
+                        <div className={'col-lg-12 heading-text text-center'}>
+                        LABO Means&nbsp;
+                            <span className={'primary-text'}>
+                        <TextLoop>
+                            <p>Quality</p>
+                            <p>Economy</p>
+                            <p>Trust</p>
+                            <p>Tradition</p>
+                            <p>Microscopy</p>
+                            <p>Market Leader</p>
+                        </TextLoop>
+                        </span>
                         </div>
                     </div>
                 </div>

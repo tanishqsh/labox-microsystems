@@ -4,6 +4,7 @@ import Homepage from './Pages/Homepage';
 import About from './Pages/About';
 import {ProductPage} from "./Products/ProductPage";
 import {ProductArchive} from "./Pages/ProductArchive";
+import Contact from "./Pages/Contact";
 
 const Main = () => (
     <main>
@@ -20,6 +21,7 @@ const Main = () => (
                     </Switch>
                 )}
             />
+            <Route exact path={'/contact'} component={Contact}/>
             <Route component={Homepage}/>
         </Switch>
     </main>

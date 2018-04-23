@@ -6,6 +6,7 @@ import {Separator} from '../Elements/Separator';
 import {Link} from "react-router-dom";
 
 import image_microscopeHeader from "../../images/microscopetemp.png";
+import TextLoop from "react-text-loop";
 
 
 
@@ -27,11 +28,23 @@ export class Homepage extends React.Component {
                         <div className={'row'}>
                             <div className={'col-lg-6'}>
                                 <FadeIn>
-                                    <p className={'heading-text'}> World leader In <br/> <span className={'primary-text'}> modern microscopy. </span> </p>
+                                    <div className={'heading-text'}>
+                                    LABO Means&nbsp;
+                                    <span className={'primary-text'}>
+                                    <TextLoop>
+                                        <p>Quality</p>
+                                        <p>Economy</p>
+                                        <p>Trust</p>
+                                        <p>Tradition</p>
+                                        <p>Microscopy</p>
+                                        <p>Market Leader</p>
+                                    </TextLoop>
+                                    </span>
+                                    </div>
                                     <p className={'paragraph-text subtitle-para'}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed   Lorem ipsum </p>
                                     <br/>
-                                    <div className={'text-center'}>
+                                    <div className={''}>
                                         <Link to={'/about'}><button className={'labo-button'}> Discover </button></Link>
                                     </div>
                                 </FadeIn>
