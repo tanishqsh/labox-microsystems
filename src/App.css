@@ -223,7 +223,7 @@ a:hover{
     color: #BDBDBD !important;
     letter-spacing: 1pt;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footer-secondary-text{
@@ -232,7 +232,7 @@ a:hover{
     letter-spacing: 1pt;
     margin-top: -17px;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 9px;
 }
 
 /** Mobile **/
