@@ -13,7 +13,8 @@
     "react-scripts": "1.1.1",
     "react-slick": "^0.23.1",
     "react-text-loop": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "react-router": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
